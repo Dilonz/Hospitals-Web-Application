@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Book an Appointment - Care Compass</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Book an Appointment with Care Compass Hospital" name="keywords">
+	<meta content="Schedule an appointment with our healthcare professionals at Care Compass. We offer a wide range of medical services to ensure your health and well-being." name="description">
+
+	  <!-- Logo as favicon -->
+	  <link rel="icon" href="Logo.jpg" type="Logo.jpg">
+
+	<!-- Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Animate CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+	<!-- Font Awesome Icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header class="sticky-top" style="background-color: rgba(182, 176, 176, 0.8);">
+		<div class="container d-flex justify-content-between align-items-center py-3">
+			<img src="images/Logo1.PNG" alt="Care Compass Hospitals Logo" class="img-fluid" style="max-height: 50px;">
+	
+			<nav class="d-flex align-items-center">
+				<ul class="nav me-3">
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="index.php">Home</a></li>
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="service.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="contact.html">Contact</a></li>
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="appointment.html">Appointments</a></li>
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="team.html">Our team</a></li> 
+					<li class="nav-item"><a class="nav-link text-dark fw-bold" href="checkout.html">Payments</a></li> <!-- New Payment Page -->
+				</ul>
+				<!-- Login & Sign Up Buttons -->
+				<a href="login.html" class="btn btn-primary me-2">Login</a>
+				<a href="signup.html" class="btn btn-outline-dark">Sign Up</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+    	<div class="container">
+        	<h2 class="mb-3 animate__animated animate__fadeInDown">Book an Appointment</h2>
+        	<p class="mb-0 animate__animated animate__fadeInUp">Fill out the form below to schedule an appointment with our healthcare professionals. Your health is our priority. We are committed to providing you with the best medical care tailored to your needs.</p>
+    	</div>
+	</section>
+
+	<!-- Appointment Form Section -->
+	<section class="appointment py-5">
+    	<div class="container">
+        	<form class="row g-3 shadow-lg p-4 rounded bg-white animate__animated animate__fadeIn" action="submit_appointment.php" method="post">
+            	<div class="col-md-6">
+                	<label for="name" class="form-label">Name</label>
+                	<input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+            	</div>
+            	<div class="col-md-6">
+                	<label for="email" class="form-label">Email</label>
+                	<input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+            	</div>
+            	<div class="col-md-6">
+                	<label for="phone" class="form-label">Phone</label>
+                	<input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number" required>
+            	</div>
+            	<div class="col-md-6">
+                	<label for="doctor" class="form-label">Select Doctor</label>
+                	<select id="doctor" name="doctor" class="form-select" required>
+                    	<option value="">-- Select a Doctor --</option>
+                    	<option value="Dr. John Smith">Dr. John Smith (Chief Medical Officer)</option>
+                    	<option value="Dr. Sarah Johnson">Dr. Sarah Johnson (Cardiologist)</option>
+                    	<option value="Dr. Mark Lee">Dr. Mark Lee (Pediatrician)</option>
+                    	<option value="Dr. Emily Davis">Dr. Emily Davis (Dermatologist)</option>
+                    	<option value="Dr. Michael Brown">Dr. Michael Brown (Orthopedic Surgeon)</option>
+                	</select>
+            	</div>
+            	<div class="col-md-6">
+                	<label for="date" class="form-label">Preferred Date</label>
+                	<input type="date" id="date" name="date" class="form-control" required>
+            	</div>
+            	<div class="col-md-6">
+                	<label for="time" class="form-label">Preferred Time</label>
+                	<input type="time" id="time" name="time" class="form-control" required>
+            	</div>
+            	<div class="col-md-12">
+                	<label for="message" class="form-label">Additional Information</label>
+                	<textarea id="message" name="message" class="form-control" placeholder="Please provide any additional information or specific requests regarding your appointment." rows="4"></textarea>
+            	</div>
+            	<div class="col-12 text-center">
+                	<button type="submit" class="btn btn-primary btn-lg animate__animated animate__fadeIn">Submit</button>
+            	</div>
+        	</form>
+    	</div>
+	</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section py-5" style="background: linear-gradient(135deg, #6188a9, #4a6c8a);">
+    <div class="container text-center">
+        <h3 class="mb-4 text-white animate__animated animate__fadeInDown">Subscribe to Our Newsletter</h3>
+        <p class="text-white mb-4 animate__animated animate__fadeInUp">Get the latest updates and healthcare tips straight to your inbox.</p>
+        <form class="d-flex justify-content-center animate__animated animate__fadeIn">
+            <input type="email" class="form-control w-50 me-2" placeholder="Enter your email" required style="border-radius: 50px; padding: 12px 20px;">
+            <button type="submit" class="btn btn-light" style="border-radius: 50px; padding: 12px 30px; font-weight: 600;">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+
+
+<!-- Advanced Footer Section -->
+<footer class="bg-dark text-white py-5">
+	<div class="container">
+    	<div class="row">
+        	<!-- About Section -->
+        	<div class="col-md-4">
+            	<h5 class="text-uppercase fw-bold mb-3">About Care Compass</h5>
+            	<p>At Care Compass Hospitals, we deliver exceptional healthcare by integrating innovative technology with expert care—making your well-being our foremost concern.
+</p>
+            	
+             <a href="about.html" class="text-white">Learn More</a>
+        	</div>
+
+        	<!-- Quick Links -->
+        	<div class="col-md-2">
+            	<h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+            	<ul class="list-unstyled">
+                	<li><a href="index.html" class="text-white">Home</a></li>
+                	<li><a href="about.html" class="text-white">About Us</a></li>
+                	<li><a href="service.html" class="text-white">Services</a></li>
+                	<li><a href="contact.html" class="text-white">Contact</a></li>
+                	<li><a href="appointment.html" class="text-white">Book Appointment</a></li>
+                	<li><a href="checkout.html" class="text-white">Payments</a></li>
+            	</ul>
+        	</div>
+
+        	<!-- Contact Info -->
+        	<div class="col-md-3">
+            	<h5 class="text-uppercase fw-bold mb-3">Contact Us</h5>
+            	<p><i class="fas fa-map-marker-alt"></i> 46/f Health Street, colombo 5,</p>
+            	<p><i class="fas fa-phone"></i> 0769283864</p>
+            	<p><i class="fas fa-envelope"></i> info@carecompass.com</p>
+        	</div>
+
+        	<!-- Newsletter Subscription -->
+        	<div class="col-md-3">
+            	<h5 class="text-uppercase fw-bold mb-3">Subscribe to Our Newsletter</h5>
+            	<form>
+                	<div class="mb-3">
+                    	<input type="email" class="form-control" placeholder="Your Email" required>
+                	</div>
+                	<button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            	</form>
+        	</div>
+    	</div>
+
+    	<hr class="border-light my-4">
+
+    	<!-- Social Media & Copyright -->
+    	<div class="d-flex justify-content-between align-items-center">
+        	<p class="mb-0">&copy; 2025 Care Compass Hospitals. All Rights Reserved.</p>
+        	<div>
+            	<a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+        	</div>
+    	</div>
+	</div>
+</footer>
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom JS for Animations -->
+	<script>
+    	document.addEventListener("DOMContentLoaded", function() {
+        	const elements = document.querySelectorAll('.animate__animated');
+        	elements.forEach(element => {
+            	element.style.visibility = 'visible';
+        	});
+    	});
+	</script>
+</body>
+
+</html>

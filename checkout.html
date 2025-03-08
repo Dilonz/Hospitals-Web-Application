@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Checkout - Care Compass Hospitals</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Secure hospital payment checkout" name="keywords">
+	<meta content="Complete your payment securely at Care Compass Hospitals." name="description">
+
+
+	  <!-- Logo as favicon -->
+	  <link rel="icon" href="Logo.jpg" type="Logo.jpg">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+   
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+
+
+
+	<!-- Custom Styles -->
+	<style>
+    	body {
+        	font-family: 'Poppins', sans-serif;
+        	background: #f8f9fa;
+        	color: #333;
+    	}
+
+    	header {
+        	background: #476f9b;
+        	color: #fff;
+        	padding: 60px 0;
+    	}
+
+    	header h1 {
+        	font-size: 2.5rem;
+        	font-weight: 700;
+    	}
+
+    	.checkout {
+        	padding: 60px 0;
+    	}
+
+    	.checkout h2 {
+        	font-size: 2rem;
+        	font-weight: 700;
+        	margin-bottom: 30px;
+        	color: #344564;
+    	}
+
+    	.form-label {
+        	font-weight: 600;
+        	color: #333;
+    	}
+
+    	.form-control {
+        	border-radius: 10px;
+        	padding: 12px 15px;
+        	border: 1px solid #ddd;
+        	transition: all 0.3s ease;
+    	}
+
+    	.form-control:focus {
+        	border-color: #3f4f5f;
+        	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    	}
+
+    	.btn-success {
+        	background: #28a745;
+        	border: none;
+        	padding: 12px 30px;
+        	border-radius: 10px;
+        	font-weight: 600;
+        	transition: all 0.3s ease;
+    	}
+
+    	.btn-success:hover {
+        	background: #218838;
+    	}
+
+    	.card {
+        	border: none;
+        	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        	border-radius: 10px;
+        	transition: transform 0.3s ease;
+    	}
+
+    	.card:hover {
+        	transform: translateY(-5px);
+    	}
+
+    	.card-header {
+        	background: #1f3f61;
+        	color: #fff;
+        	font-weight: 600;
+        	border-radius: 10px 10px 0 0;
+    	}
+
+    	.card-body {
+        	padding: 20px;
+    	}
+
+    	.card-title {
+        	font-size: 1.25rem;
+        	font-weight: 600;
+        	margin-bottom: 15px;
+    	}
+
+    	.card-text {
+        	font-size: 1rem;
+        	color: #666;
+    	}
+	</style>
+</head>
+
+<header class="sticky-top" style="background-color: rgba(182, 176, 176, 0.8);">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+        <img src="images/Logo1.PNG" alt="Care Compass Hospitals Logo" class="img-fluid" style="max-height: 50px;">
+
+        <nav class="d-flex align-items-center">
+            <ul class="nav me-3">
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="appointment.html">Appointments</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="team.html">Our team</a></li> 
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="checkout.html">Payments</a></li> <!-- New Payment Page -->
+            </ul>
+            <!-- Login & Sign Up Buttons -->
+            <a href="login.html" class="btn btn-primary me-2">Login</a>
+            <a href="signup.html" class="btn btn-outline-dark">Sign Up</a>
+        </nav>
+    </div>
+</header>
+
+
+
+	<!-- Header Section -->
+	<header class="text-center">
+    	<div class="container">
+        	<h1>Secure Payment Checkout</h1>
+        	<p class="lead">Complete your payment securely and book your appointment with ease.</p>
+    	</div>
+	</header>
+
+	<body>
+
+
+
+	<!-- Checkout Section -->
+	<section class="checkout">
+    	<div class="container">
+        	<h2 class="text-center">Complete Your Payment</h2>
+        	<div class="row">
+            	<div class="col-lg-8 mx-auto">
+                	<div class="card">
+                    	<div class="card-header">
+                        	Patient & Appointment Details
+                    	</div>
+                    	<div class="card-body">
+                        	<form action="process_payment.php" method="post" class="row g-3">
+                            	<!-- Patient Details -->
+                            	<div class="col-md-6">
+                                	<label for="fullname" class="form-label">Full Name</label>
+                                	<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                            	</div>
+                            	<div class="col-md-6">
+                                	<label for="email" class="form-label">Email Address</label>
+                                	<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            	</div>
+                            	<div class="col-md-6">
+                                	<label for="age" class="form-label">Patient Age</label>
+                                	<input type="number" class="form-control" id="age" name="age" placeholder="Enter patient age" required>
+                            	</div>
+                            	<div class="col-md-6">
+                                	<label for="phone" class="form-label">Phone Number</label>
+                                	<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            	</div>
+
+                            	<!-- Medical Program Selection -->
+                            	<div class="col-md-12">
+                                	<label for="medical_program" class="form-label">Medical Program</label>
+                                	<select class="form-control" id="medical_program" name="medical_program" required>
+                                    	<option value="">Choose a medical program</option>
+                                    	<option value="Health Checkup">Health Checkup - $99</option>
+                                    	<option value="Operation & Surgery">Operation & Surgery - $199</option>
+                                    	<option value="Emergency Care">Emergency Care - $149</option>
+                                    	<option value="Comprehensive Care">Comprehensive Care - $249</option>
+                                	</select>
+                            	</div>
+
+                            	<!-- Doctor Selection -->
+                            	<div class="col-md-12">
+                                	<label for="doctor" class="form-label">Select Doctor</label>
+                                	<select class="form-control" id="doctor" name="doctor" required>
+                                    	<option value="">Choose a doctor</option>
+                                    	<option value="Dr. John Doe">Dr. John Doe - Cardiology</option>
+                                    	<option value="Dr. Jane Smith">Dr. Jane Smith - Pediatrics</option>
+                                    	<option value="Dr. Emily Brown">Dr. Emily Brown - Dermatology</option>
+                                    	<option value="Dr. Michael Lee">Dr. Michael Lee - Orthopedics</option>
+                                	</select>
+                            	</div>
+
+                            	<!-- Payment Details -->
+                            	<div class="col-md-12">
+                                	<label for="card_number" class="form-label">Card Number</label>
+                                	<input type="text" class="form-control" id="card_number" name="card_number" placeholder="Enter card number" required>
+                            	</div>
+                            	<div class="col-md-4">
+                                	<label for="expiry_date" class="form-label">Expiry Date</label>
+                                	<input type="text" class="form-control" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+                            	</div>
+                            	<div class="col-md-4">
+                                	<label for="cvv" class="form-label">CVV</label>
+                                	<input type="text" class="form-control" id="cvv" name="cvv" placeholder="CVV" required>
+                            	</div>
+                            	<div class="col-md-4">
+                                	<label for="amount" class="form-label">Amount (USD)</label>
+                                	<input type="text" class="form-control" id="amount" name="amount" placeholder="Enter amount" required readonly>
+                            	</div>
+
+                            	<!-- Submit Button -->
+                            	<div class="col-12 text-center">
+                                	<button type="submit" class="btn btn-success">Pay Now</button>
+                            	</div>
+                        	</form>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+	</section>
+
+
+
+<!-- Call to Action Section -->
+<section class="cta-section py-5" style="background: linear-gradient(135deg, #6188a9, #4a6c8a);">
+    <div class="container text-center">
+        <h3 class="mb-4 text-white animate__animated animate__fadeInDown">Join Us in Our Journey to Revolutionize Healthcare</h3>
+        <p class="lead text-white mb-4 animate__animated animate__fadeInUp">We are committed to providing innovative and compassionate care. Let’s work together to make a difference.</p>
+        <a href="contact.html" class="btn btn-light btn-lg animate__animated animate__pulse animate__infinite">Contact Us</a>
+    </div>
+</section>
+
+
+
+
+<!-- Advanced Footer Section -->
+<footer class="bg-dark text-white py-5">
+	<div class="container">
+    	<div class="row">
+        	<!-- About Section -->
+        	<div class="col-md-4">
+            	<h5 class="text-uppercase fw-bold mb-3">About Care Compass</h5>
+            	<p>At Care Compass Hospitals, we deliver exceptional healthcare by integrating innovative technology with expert care—making your well-being our foremost concern.
+</p>
+            	
+             <a href="about.html" class="text-white">Learn More</a>
+        	</div>
+
+        	<!-- Quick Links -->
+        	<div class="col-md-2">
+            	<h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+            	<ul class="list-unstyled">
+                	<li><a href="index.php" class="text-white">Home</a></li>
+                	<li><a href="about.html" class="text-white">About Us</a></li>
+                	<li><a href="service.html" class="text-white">Services</a></li>
+                	<li><a href="contact.html" class="text-white">Contact</a></li>
+                	<li><a href="appointment.html" class="text-white">Book Appointment</a></li>
+                	<li><a href="checkout.html" class="text-white">Payments</a></li>
+            	</ul>
+        	</div>
+
+        	<!-- Contact Info -->
+        	<div class="col-md-3">
+            	<h5 class="text-uppercase fw-bold mb-3">Contact Us</h5>
+            	<p><i class="fas fa-map-marker-alt"></i> 46/f Health Street, colombo 5,</p>
+            	<p><i class="fas fa-phone"></i> 0769283864</p>
+            	<p><i class="fas fa-envelope"></i> info@carecompass.com</p>
+        	</div>
+
+        	<!-- Newsletter Subscription -->
+        	<div class="col-md-3">
+            	<h5 class="text-uppercase fw-bold mb-3">Subscribe to Our Newsletter</h5>
+            	<form>
+                	<div class="mb-3">
+                    	<input type="email" class="form-control" placeholder="Your Email" required>
+                	</div>
+                	<button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            	</form>
+        	</div>
+    	</div>
+
+    	<hr class="border-light my-4">
+
+    	<!-- Social Media & Copyright -->
+    	<div class="d-flex justify-content-between align-items-center">
+        	<p class="mb-0">&copy; 2025 Care Compass Hospitals. All Rights Reserved.</p>
+        	<div>
+            	<a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+        	</div>
+    	</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- JavaScript to Update Amount Based on Selected Program -->
+	<script>
+    	document.getElementById('medical_program').addEventListener('change', function () {
+        	const program = this.value;
+        	let amount = 0;
+
+        	switch (program) {
+            	case 'Health Checkup':
+                	amount = 99;
+                	break;
+            	case 'Operation & Surgery':
+                	amount = 199;
+                	break;
+            	case 'Emergency Care':
+                	amount = 149;
+                	break;
+            	case 'Comprehensive Care':
+                	amount = 249;
+                	break;
+            	default:
+                	amount = 0;
+        	}
+
+        	document.getElementById('amount').value = amount;
+    	});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title> 
+
+    <!-- Logo as favicon -->
+    <link rel="icon" href="Logo.jpg" type="Logo.jpg">
+    
+    <!-- Other meta tags -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Hospital Facilities, Services, and Appointments" name="keywords">
+    <meta content="Explore Care Compass healthcare services, facilities, and more." name="description">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<header class="sticky-top" style="background-color: rgba(182, 176, 176, 0.8);">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+        <img src="images/Logo1.PNG" alt="Care Compass Hospitals Logo" class="img-fluid" style="max-height: 50px;">
+
+        <nav class="d-flex align-items-center">
+            <ul class="nav me-3">
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="appointment.html">Appointments</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="team.html">Our team</a></li> 
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="checkout.html">Payments</a></li> <!-- New Payment Page -->
+            </ul>
+            <!-- Login & Sign Up Buttons -->
+            <a href="login.html" class="btn btn-primary me-2">Login</a>
+            <a href="signup.html" class="btn btn-outline-dark">Sign Up</a>
+        </nav>
+    </div>
+</header>
+
+
+
+<section class="hero text-center text-white position-relative d-flex align-items-center justify-content-center" 
+         style="background: url('01.JPG') center/cover no-repeat; height: 80vh; min-height: 400px;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <div class="container position-relative z-index-1 py-5">
+        <h1 class="mb-3 animate__animated animate__fadeInDown">Exceptional Healthcare Choice <br> In Your City</h1>
+        <p class="mb-4 animate__animated animate__fadeInUp">Find professional healthcare services tailored to your needs.</p>
+        <a href="#services" class="btn btn-light me-2 animate__animated animate__fadeInLeft">Explore Services</a>
+        <a href="appointment.html" class="btn btn-outline-light animate__animated animate__fadeInRight">Book Appointment</a>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about py-5 bg-light">
+	<div class="container">
+    	<div class="row align-items-center">
+        	<!-- Image Column -->
+        	<div class="col-md-6 mb-4 mb-md-0 animate__animated animate__fadeInLeft">
+            	<img src="A1.jpg" alt="About Us" class="img-fluid rounded shadow">
+        	</div>
+
+        	<!-- Text Column -->
+        	<div class="col-md-6 animate__animated animate__fadeInRight">
+            	<h2 class="mb-4">Exceptional Healthcare for You and Your Family</h2>
+            	<p class="lead mb-4">
+				At our medical facility, we are deeply committed to providing the highest standard of healthcare services to you and your family. We understand the importance of good health and well-being, which is why our dedicated team of experienced professionals works tirelessly to ensure you receive the best possible care. By integrating the latest medical technologies and innovative treatments, we offer personalized healthcare solutions that are specifically tailored to meet your unique needs. Our focus is not only on treating illnesses but also on promoting long-term health and prevention, ensuring that you and your loved ones enjoy a better quality of life. Whether you require routine check-ups or specialized care, we are here to support you every step of the way.
+            	</p>
+            
+            	<a href="#services" class="btn btn-primary mt-3">
+                	<i class="fas fa-stethoscope me-2"></i>Explore Our Services
+            	</a>
+        	</div>
+    	</div>
+	</div>
+</section>
+
+
+<!-- About Section -->
+<section class="about py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-6 animate__animated animate__fadeInLeft">
+                <h2 class="mb-4">Quick and Trustworthy Healthcare Services</h2>
+                <p class="lead mb-4">
+                    We are committed to providing fast and reliable medical services that you can trust. Our dedicated team ensures prompt attention and high-quality care for every patient, making your health our top priority.
+                </p>
+                <p>
+                    With state-of-the-art technology and experienced professionals, we focus on delivering effective treatments efficiently. Our goal is to provide seamless and compassionate care, ensuring a stress-free experience for our patients.
+                </p>
+                <a href="#services" class="btn btn-primary mt-3">
+                    <i class="fas fa-stethoscope me-2"></i>Explore Our Services
+                </a>
+            </div>
+            
+            <!-- Image Column -->
+            <div class="col-md-6 mb-4 mb-md-0 animate__animated animate__fadeInRight">
+                <img src="q1.jpg" alt="About Us" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Medical Services</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+
+
+
+<!-- Services Section -->
+<section id="services" class="services bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 animate__animated animate__fadeIn">Excellent Medical Services</h2>
+        <p class="text-center mb-5 lead animate__animated animate__fadeIn">We provide world-class healthcare services with cutting-edge technology and compassionate care. Our dedicated team ensures that every patient receives personalized attention and the highest quality of medical treatment.</p>
+        <div class="row">
+            <!-- Emergency Care -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInLeft">
+                    <div class="card-body">
+                        <div class="icon mb-4">
+                            <i class="fas fa-ambulance fa-3x text-primary-custom"></i>
+                        </div>
+                        <h5 class="card-title text-primary-custom">Emergency Care</h5>
+                        <p class="card-text">Our emergency department is fully equipped to handle critical situations 24/7. With a team of highly trained professionals and advanced medical technology, we ensure immediate and effective care for all emergencies, from accidents to life-threatening conditions.</p>
+                        <a href="#" class="btn btn-primary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Surgery & Operations -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <div class="icon mb-4">
+                            <i class="fas fa-syringe fa-3x text-primary-custom"></i>
+                        </div>
+                        <h5 class="card-title text-primary-custom">Surgery & Operations</h5>
+                        <p class="card-text">We offer advanced surgical procedures with state-of-the-art technology. Our operating rooms are designed for precision and safety, ensuring the best outcomes for our patients. From minimally invasive surgeries to complex operations, we prioritize your well-being.</p>
+                        <a href="#" class="btn btn-primary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Checkups -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInRight">
+                    <div class="card-body">
+                        <div class="icon mb-4">
+                            <i class="fas fa-heartbeat fa-3x text-primary-custom"></i>
+                        </div>
+                        <h5 class="card-title text-primary-custom">Health Checkups</h5>
+                        <p class="card-text">Regular health checkups are essential for maintaining wellness. Our comprehensive packages cater to all age groups, helping you stay proactive about your health. Early detection and prevention are key to a healthy life.</p>
+                        <a href="#" class="btn btn-primary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Services Row -->
+        <div class="row mt-4">
+            <!-- Pediatric Care -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInLeft">
+                    <div class="card-body">
+                        <div class="icon mb-4">
+                            <i class="fas fa-baby fa-3x text-primary-custom"></i>
+                        </div>
+                        <h5 class="card-title text-primary-custom">Pediatric Care</h5>
+                        <p class="card-text">Specialized care for children, ensuring their growth and development are monitored by expert pediatricians. We provide a child-friendly environment and personalized care plans to support your child's health journey.</p>
+                        <a href="#" class="btn btn-primary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maternity Care -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <div class="icon mb-4">
+                            <i class="fas fa-female fa-3x text-primary-custom"></i>
+                        </div>
+                        <h5 class="card-title text-primary-custom">Maternity Care</h5>
+                        <p class="card-text">Comprehensive maternity services, from prenatal care to postnatal support, ensuring a safe and healthy journey for mothers and babies. Our team is dedicated to providing compassionate care during this special time.</p>
+                        <a href="#" class="btn btn-primary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mental Health -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center animate__animated animate__fadeInRight">
+                    <div class="card-body">
+                        <div class="icon mb-4">
+                            <i class="fas fa-brain fa-3x text-primary-custom"></i>
+                        </div>
+                        <h5 class="card-title text-primary-custom">Mental Health</h5>
+                        <p class="card-text">Our mental health services provide support for anxiety, depression, and other conditions, helping you achieve emotional well-being. We offer counseling, therapy, and personalized treatment plans to support your mental health journey.</p>
+                        <a href="#" class="btn btn-primary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Appointment Booking Section -->
+<section class="appointment py-5" style="background: linear-gradient(135deg, #f0f4f8, #c9d6ff);">
+	<div class="container">
+    	<div class="row align-items-center">
+        	<!-- Left Side: Image and Text -->
+        	<div class="col-lg-6 mb-5 mb-lg-0">
+            	<div class="text-center text-lg-start">
+                	<!-- Image Section -->
+                        <!-- Title and Description -->
+                	<h2 class="display-4 fw-bold animate__animated animate__fadeIn">Make An Appointment</h2>
+                      <img src="images/ap1.JPG" alt="Appointment Image" class="img-fluid" style="max-width: 600px; height: auto; border-radius: 5%;">
+
+<br><br>
+
+                	<p class="lead text-muted animate__animated animate__fadeIn">
+                    	Book an appointment for your family with our expert doctors. We provide the best care for you and your loved ones. Our team is dedicated to ensuring your health and well-being.
+                	</p>
+                	
+            	</div>
+        	</div>
+
+        	<!-- Right Side: Appointment Form -->
+        	<div class="col-lg-6">
+            	<form action="submit_appointment.php" method="post" class="bg-white p-4 p-md-5 rounded-4 shadow-lg animate__animated animate__fadeInUp">
+                	<h3 class="text-center mb-4 fw-bold">Book Your Appointment</h3>
+                	<div class="row g-3">
+                    	<!-- Name Field -->
+                    	<div class="col-md-6">
+                        	<div>
+                            	<label for="name" class="form-label"><i class="fas fa-user me-2"></i>Your Name</label>
+                            	<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        	</div>
+                    	</div>
+                    	<!-- Email Field -->
+                    	<div class="col-md-6">
+                        	<div>
+                            	<label for="email" class="form-label"><i class="fas fa-envelope me-2"></i>Your Email</label>
+                            	<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                        	</div>
+                    	</div>
+                    	<!-- Department Field -->
+                    	<div class="col-md-6">
+                        	<div class="form-floating">
+                            	<select class="form-select" id="department" name="department" required>
+                                	<option value="">Choose Department</option>
+                                	<option value="Cardiology">Cardiology</option>
+                                	<option value="Dermatology">Dermatology</option>
+                                	<option value="Orthopedics">Orthopedics</option>
+                                	<option value="Pediatrics">Pediatrics</option>
+                            	</select>
+                            	<label for="department"><i class="fas fa-hospital me-2"></i>Choose Department</label>
+                        	</div>
+                    	</div>
+                    	<!-- Doctor Field -->
+                    	<div class="col-md-6">
+                        	<div class="form-floating">
+                            	<select class="form-select" id="doctor" name="doctor" required>
+                                	<option value="">Select Doctor</option>
+                                	<option value="Dr. Smith">Dr. Smith</option>
+                                	<option value="Dr. Johnson">Dr. Johnson</option>
+                                	<option value="Dr. Lee">Dr. Lee</option>
+                            	</select>
+                            	<label for="doctor"><i class="fas fa-user-md me-2"></i>Select Doctor</label>
+                        	</div>
+                    	</div>
+                    	<!-- Date Field -->
+                    	<div class="col-md-6">
+                        	<div class="form-floating">
+                            	<input type="date" class="form-control" id="date" name="date" required>
+                            	<label for="date"><i class="fas fa-calendar-day me-2"></i>Select Date</label>
+                        	</div>
+                    	</div>
+                    	<!-- Time Field -->
+                    	<div class="col-md-6">
+                        	<div class="form-floating">
+                            	<input type="time" class="form-control" id="time" name="time" required>
+                            	<label for="time"><i class="fas fa-clock me-2"></i>Select Time</label>
+                        	</div>
+                    	</div>
+                    	<!-- Submit Button -->
+                    	<div class="col-12 text-center mt-4">
+                        	<button type="submit" class="btn btn-primary btn-lg px-5 py-3 fw-bold animate__animated animate__pulse animate__infinite">
+                            	<i class="fas fa-calendar-check me-2"></i>Book Now
+                        	</button>
+                    	</div>
+                	</div>
+            	</form>
+        	</div>
+    	</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+<!-- Online Payment Section -->
+<section class="payment py-5 bg-light">
+	<div class="container">
+    	
+    	<div class="row justify-content-center">
+        	<div class="col-md-8 text-center">
+            	<div class="card p-4 shadow-sm animate__animated animate__fadeInUp">
+                	<h3 class="mb-3"> Proceed to Checkout</h3>
+                	<p class="text-muted mb-4">Click the button below to securely complete your payment. We accept all major credit cards, debit cards, and digital wallets.</p>
+                	<a href="checkout.html" class="btn btn-success btn-lg">
+                    	<i class="fas fa-credit-card me-2"></i>Pay Now
+                	</a>
+            	</div>
+        	</div>
+    	</div>
+
+    	<div class="text-center mt-4">
+        	<p class="text-muted small">Your payment is 100% secure. We use advanced encryption to protect your data.</p>
+    	</div>
+	</div>
+</section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doctors Section</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+	<?php
+require_once 'db_config.php'; // Ensure you have a database connection file
+
+// Fetch doctors from the database
+$query = "SELECT * FROM doctors";
+$result = $conn->query($query);
+?>
+
+<section class="doctors-section">
+    <h2>Qualified Healthcare Professionals</h2>
+    <div class="doctors-container">
+        <?php while ($doctor = $result->fetch_assoc()): ?>
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="<?php echo $doctor['image']; ?>" alt="<?php echo $doctor['name']; ?>">
+                </div>
+                <h3><?php echo $doctor['name']; ?></h3>
+                <p><em><?php echo $doctor['specialty']; ?></em></p>
+                <p><?php echo $doctor['description']; ?></p>
+                <div class="social-icons">
+                    <a href="<?php echo $doctor['twitter']; ?>"><i class="fab fa-twitter"></i></a>
+                    <a href="<?php echo $doctor['linkedin']; ?>"><i class="fab fa-linkedin"></i></a>
+                    <a href="<?php echo $doctor['instagram']; ?>"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        <?php endwhile; ?>
+    </div>
+</section>
+
+<?php
+$conn->close(); // Close the database connection
+?>
+
+</body>
+</html>
+<!-- Medical Programs Section -->
+<section class="medical-programs py-5 bg-light">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h5 class="d-inline-block text-primary-custom text-uppercase border-bottom border-5">Medical Packages</h5>
+            <h1 class="display-4 mt-3 animate__animated animate__fadeIn">Awesome Medical Programs</h1>
+            <p class="lead animate__animated animate__fadeIn">Choose from our comprehensive medical programs designed to meet your healthcare needs.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Health Checkup Program -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm animate__animated animate__fadeInLeft">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary-custom">Health Checkup</h3>
+                        <h1 class="display-6 text-dark mb-4">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                        </h1>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Comprehensive Health </li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Personalized Health Reports</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Access to Expert Physicians</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>24/7 Telehealth Support</li>
+                        </ul>
+                        <a href="checkout.html" class="btn btn-primary-custom rounded-pill py-2 px-4 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operation & Surgery Program -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary-custom">Operation & Surgery</h3>
+                        <h1 class="display-6 text-dark mb-4">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>199<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                        </h1>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Advanced Surgical Procedures</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>State-of-the-Art Operating </li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Post-Surgery Rehabilitation</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>24/7 Patient Monitoring</li>
+                        </ul>
+                        <a href="checkout.html" class="btn btn-primary-custom rounded-pill py-2 px-4 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Medical Treatment Program -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary-custom">Emergency Care</h3>
+                        <h1 class="display-6 text-dark mb-4">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                        </h1>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>24/7 Emergency Services</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Rapid Response Teams</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Advanced Life Support</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Immediate Medical Attention</li>
+                        </ul>
+                        <a href="checkout.html" class="btn btn-primary-custom rounded-pill py-2 px-4 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comprehensive Care Program -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm animate__animated animate__fadeInRight">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary-custom">Comprehensive Care</h3>
+                        <h1 class="display-6 text-dark mb-4">
+                            <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>249<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                        </h1>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Full Medical Coverage</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Access to All Specialists</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Preventive Health Programs</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-primary-custom me-2"></i>Personal Health Concierge</li>
+                        </ul>
+                        <a href="checkout.html" class="btn btn-primary-custom rounded-pill py-2 px-4 mt-3">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonials bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 animate__animated animate__fadeIn">What Our Patients Say</h2>
+        <div class="row justify-content-center g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp">
+                <div class="card h-100 p-4 shadow-sm border-0 hover-effect">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/patient1.jpg" alt="Patient 1" class="rounded-circle shadow-sm" width="100" height="100">
+                        </div>
+                        <div class="star-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="mb-3 fst-italic">"The doctors and staff are amazing. I highly recommend Care Compass! They provided exceptional care and made me feel comfortable throughout my treatment."</p>
+                            <footer class="blockquote-footer mt-3">
+                                <strong>John Doe</strong><br>
+                                <small class="text-muted">Cardiology Patient</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="card h-100 p-4 shadow-sm border-0 hover-effect">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/patient2.jpg" alt="Patient 2" class="rounded-circle shadow-sm" width="100" height="100">
+                        </div>
+                        <div class="star-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="mb-3 fst-italic">"Exceptional service and care. Couldn�t ask for better healthcare. The team is professional, compassionate, and truly cares about their patients."</p>
+                            <footer class="blockquote-footer mt-3">
+                                <strong>Jane Smith</strong><br>
+                                <small class="text-muted">Pediatric Care</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="card h-100 p-4 shadow-sm border-0 hover-effect">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/patient3.jpg" alt="Patient 3" class="rounded-circle shadow-sm" width="100" height="100">
+                        </div>
+                        <div class="star-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="mb-3 fst-italic">"I had a wonderful experience at Care Compass. The facilities are top-notch, and the staff is incredibly supportive. Highly recommended!"</p>
+                            <footer class="blockquote-footer mt-3">
+                                <strong>Emily Johnson</strong><br>
+                                <small class="text-muted">Dermatology Patient</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Blog Section -->
+<section class="blog py-5 bg-light">
+	<div class="container">
+    	<h2 class="text-center fw-bold mb-5">Latest Health & Wellness Articles</h2>
+
+    	<div class="row">
+        	<!-- Blog Post 1 -->
+        	<div class="col-md-4">
+            	<div class="card shadow-sm border-0 animate__animated animate__fadeInUp">
+                	<img src="images/blog1.jpg" class="card-img-top" alt="Healthy Lifestyle">
+                	<div class="card-body">
+                    	<h5 class="card-title fw-bold">10 Tips for a Healthy Lifestyle</h5>
+                    	<p class="card-text">Discover simple yet effective ways to improve your daily routine and maintain a healthy body and mind.</p>
+                    	<a href="blog-post1.html" class="btn btn-primary">Read More</a>
+                	</div>
+            	</div>
+        	</div>
+
+        	<!-- Blog Post 2 -->
+        	<div class="col-md-4">
+            	<div class="card shadow-sm border-0 animate__animated animate__fadeInUp">
+                	<img src="images/blog2.jpg" class="card-img-top" alt="Heart Care">
+                	<div class="card-body">
+                    	<h5 class="card-title fw-bold">Heart Health: What You Need to Know</h5>
+                    	<p class="card-text">Learn how to maintain a strong heart through proper nutrition, exercise, and regular check-ups.</p>
+                    	<a href="blog-post2.html" class="btn btn-primary">Read More</a>
+                	</div>
+            	</div>
+        	</div>
+
+        	<!-- Blog Post 3 -->
+        	<div class="col-md-4">
+            	<div class="card shadow-sm border-0 animate__animated animate__fadeInUp">
+                	<img src="images/blog3.jpg" class="card-img-top" alt="Mental Wellness">
+                	<div class="card-body">
+                    	<h5 class="card-title fw-bold">Mental Health: Importance of Self-Care</h5>
+                    	<p class="card-text">Explore self-care strategies to boost mental well-being and reduce stress in daily life.</p>
+                    	<a href="blog-post3.html" class="btn btn-primary">Read More</a>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+
+    	<!-- View More Button -->
+    	<div class="text-center mt-4">
+        	<a href="blog.html" class="btn btn-outline-primary btn-lg">View All Articles</a>
+    	</div>
+	</div>
+</section>
+
+
+
+<!-- Call to Action Section -->
+<section class="cta-section py-5" style="background: linear-gradient(135deg, #6188a9, #4a6c8a);">
+    <div class="container text-center">
+        <h3 class="mb-4 text-white animate__animated animate__fadeInDown">Subscribe to Our Newsletter</h3>
+        <p class="text-white mb-4 animate__animated animate__fadeInUp">Get the latest updates and healthcare tips straight to your inbox.</p>
+        <form class="d-flex justify-content-center animate__animated animate__fadeIn">
+            <input type="email" class="form-control w-50 me-2" placeholder="Enter your email" required style="border-radius: 50px; padding: 12px 20px;">
+            <button type="submit" class="btn btn-light" style="border-radius: 50px; padding: 12px 30px; font-weight: 600;">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+<!-- Advanced Footer Section -->
+<footer class="bg-dark text-white py-5">
+	<div class="container">
+    	<div class="row">
+        	<!-- About Section -->
+        	<div class="col-md-4">
+            	<h5 class="text-uppercase fw-bold mb-3">About Care Compass</h5>
+            	<p>At Care Compass Hospitals, we deliver exceptional healthcare by integrating innovative technology with expert care—making your well-being our foremost concern.
+</p>
+            	
+             <a href="about.html" class="text-white">Learn More</a>
+        	</div>
+
+        	<!-- Quick Links -->
+        	<div class="col-md-2">
+            	<h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+            	<ul class="list-unstyled">
+                	<li><a href="index.html" class="text-white">Home</a></li>
+                	<li><a href="about.html" class="text-white">About Us</a></li>
+                	<li><a href="service.html" class="text-white">Services</a></li>
+                	<li><a href="contact.html" class="text-white">Contact</a></li>
+                	<li><a href="appointment.html" class="text-white">Book Appointment</a></li>
+                	<li><a href="checkout.html" class="text-white">Payments</a></li>
+            	</ul>
+        	</div>
+
+        	<!-- Contact Info -->
+        	<div class="col-md-3">
+            	<h5 class="text-uppercase fw-bold mb-3">Contact Us</h5>
+            	<p><i class="fas fa-map-marker-alt"></i> 46/f Health Street, colombo 5,</p>
+            	<p><i class="fas fa-phone"></i> 0769283864</p>
+            	<p><i class="fas fa-envelope"></i> info@carecompass.com</p>
+        	</div>
+
+        	<!-- Newsletter Subscription -->
+        	<div class="col-md-3">
+            	<h5 class="text-uppercase fw-bold mb-3">Subscribe to Our Newsletter</h5>
+            	<form>
+                	<div class="mb-3">
+                    	<input type="email" class="form-control" placeholder="Your Email" required>
+                	</div>
+                	<button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            	</form>
+        	</div>
+    	</div>
+
+    	<hr class="border-light my-4">
+
+    	<!-- Social Media & Copyright -->
+    	<div class="d-flex justify-content-between align-items-center">
+        	<p class="mb-0">&copy; 2025 Care Compass Hospitals. All Rights Reserved.</p>
+        	<div>
+            	<a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            	<a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+        	</div>
+    	</div>
+	</div>
+</footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.animate__animated');
+            elements.forEach(element => {
+                element.style.visibility = 'visible';
+            });
+        });
+    </script>
+</body>
+
+</html>
+
